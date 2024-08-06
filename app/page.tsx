@@ -2,13 +2,13 @@ import CustomSelect from "@/components/CustomSelect";
 import styles from "./page.module.scss";
 
 const weekdays = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
+  { key: "monday", value: "Monday" },
+  { key: "tuesday", value: "Tuesday" },
+  { key: "wednesday", value: "Wednesday" },
+  { key: "thursday", value: "Thursday" },
+  { key: "friday", value: "Friday" },
+  { key: "saturday", value: "Saturday" },
+  { key: "sunday", value: "Sunday" },
 ];
 
 export default function Home() {

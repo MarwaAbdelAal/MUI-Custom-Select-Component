@@ -10,8 +10,13 @@ import {
   SelectChangeEvent,
 } from "@mui/material";
 
+type option = {
+  key: string;
+  value: string;
+};
+
 type CustomSelectProps = {
-  options: string[];
+  options: option[];
   label: string;
 };
 
@@ -34,8 +39,8 @@ export default function CustomSelect({ options, label }: CustomSelectProps) {
           onChange={handleChange}
         >
           {options.map((option) => (
-            <MenuItem key={option} value={option}>
-              {option}
+            <MenuItem key={option.key} value={option.key}>
+              {option.value}
             </MenuItem>
           ))}
         </Select>
