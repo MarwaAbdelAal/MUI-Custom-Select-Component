@@ -1,6 +1,6 @@
 import CustomSelect from "@/components/CustomSelect";
 import styles from "./page.module.scss";
-import { weekdays } from "@/data/weekDays";
+import { weekdays } from "@/data/weekdays";
 
 export default function Home() {
   return (
